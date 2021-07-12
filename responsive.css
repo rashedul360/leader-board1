@@ -1,0 +1,119 @@
+/*==== Tablet Device ====*/
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+
+    .container {
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    .top-players {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 80px;
+    }
+
+    .top-blog-title {
+        text-align: center;
+    }
+
+    .blogs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .blog {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .blog-info {
+        text-align: center;
+    }
+
+    .latest-course-title {
+        text-align: center;
+    }
+
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .course {
+        margin-bottom: 20px;
+    }
+
+}
+
+/*==== Mobile Device ====*/
+
+@media only screen and (max-width: 688px) {
+
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .players, .blogs, .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .top-player-title {
+        text-align: center;
+    }
+
+    .top-blog-title {
+        text-align: center;
+    }
+
+    .blogs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .thumbnail {
+        display: flex;
+        justify-content: center;
+    }
+
+    .blog-author {
+        text-align: center;
+    }
+
+    .latest-course-title {
+        text-align: center;
+    }
+
+    .courses {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .course {
+        margin-bottom: 20px;
+    }
+
+    .player, .blog {
+        flex-direction: column;
+    }
+
+    
+}
